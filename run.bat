@@ -1,0 +1,15 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+title NEXUS QuoteCheck AI
+if not exist ".venv\Scripts\python.exe" (
+  echo Please run setup.bat first.
+  pause
+  exit /b 1
+)
+".venv\Scripts\python.exe" app.py
+if errorlevel 1 (
+  echo.
+  echo The application exited with an error. Screenshot the message above.
+  pause
+)

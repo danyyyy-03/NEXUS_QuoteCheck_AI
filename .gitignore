@@ -1,0 +1,20 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+build/
+dist/
+*.spec
+*.nqc.json
+# Avoid accidentally publishing confidential supplier quotes and exported reports
+*.xlsx
+*.pdf
+*.csv
+*.html
+*.log
+*.tmp
+!samples/*.xlsx
+!samples/*.pdf
